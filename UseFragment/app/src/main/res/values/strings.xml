@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UseFragment</string>
+    <string name="enteremail">Enter email address</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="forgetPassword">Forget Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="name">Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

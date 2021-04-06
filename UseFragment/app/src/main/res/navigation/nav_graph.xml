@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appLogin">
+
+    <fragment
+        android:id="@+id/appLogin"
+        android:name="com.example.usefragment.AppLogin"
+        android:label="fragment_app_login"
+        tools:layout="@layout/fragment_app_login" >
+        <action
+            android:id="@+id/action_appLogin_to_appDashBoard"
+            app:destination="@id/appDashBoard" />
+        <action
+            android:id="@+id/action_appLogin_to_appSignup"
+            app:destination="@id/appSignup2" />
+    </fragment>
+    <fragment
+        android:id="@+id/appSignup2"
+        android:name="com.example.usefragment.AppSignup"
+        android:label="fragment_app_signup"
+        tools:layout="@layout/fragment_app_signup" >
+        <action
+            android:id="@+id/action_appSignup2_to_appLogin"
+            app:destination="@id/appLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/appDashBoard"
+        android:name="com.example.usefragment.AppDashBoard"
+        android:label="fragment_app_dash_board"
+        tools:layout="@layout/fragment_app_dash_board" >
+        <action
+            android:id="@+id/action_appDashBoard_to_appLogin"
+            app:destination="@id/appLogin" />
+    </fragment>
+</navigation>
