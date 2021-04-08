@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_appSignup2_to_appLogin"
             app:destination="@id/appLogin" />
+        <action
+            android:id="@+id/action_appSignup2_to_userProfile"
+            app:destination="@id/userProfile" />
     </fragment>
     <fragment
         android:id="@+id/appDashBoard"
@@ -34,5 +37,13 @@
         <action
             android:id="@+id/action_appDashBoard_to_appLogin"
             app:destination="@id/appLogin" />
+        <action
+            android:id="@+id/action_appDashBoard_to_userProfile"
+            app:destination="@id/userProfile" />
     </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.usefragment.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
 </navigation>
