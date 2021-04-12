@@ -12,12 +12,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class AppLogin extends Fragment {
 
     Button loginButton;
     TextView textView;
+    ProgressBar progressBar;
 
 
     public AppLogin() {
@@ -46,6 +48,7 @@ public class AppLogin extends Fragment {
 
         loginButton = view.findViewById(R.id.apploginButton);
         textView = view.findViewById(R.id.apploginSignupLink);
+        progressBar = view.findViewById(R.id.apploginProgressBar);
 
         textView.setOnClickListener(new View.OnClickListener() {
             @Override

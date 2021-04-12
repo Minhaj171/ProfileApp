@@ -68,6 +68,17 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="@string/login"/>
+    
+    <ProgressBar
+        android:id="@+id/apploginProgressBar"
+        android:layout_marginBottom ="90dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
 
 </FrameLayout>

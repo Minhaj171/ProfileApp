@@ -40,10 +40,18 @@
         <action
             android:id="@+id/action_appDashBoard_to_userProfile"
             app:destination="@id/userProfile" />
+        <action
+            android:id="@+id/action_appDashBoard_to_createProfile"
+            app:destination="@id/createProfile" />
     </fragment>
     <fragment
         android:id="@+id/userProfile"
         android:name="com.example.usefragment.UserProfile"
         android:label="fragment_user_profile"
         tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/createProfile"
+        android:name="com.example.usefragment.CreateProfile"
+        android:label="fragment_create_profile"
+        tools:layout="@layout/fragment_create_profile" />
 </navigation>
