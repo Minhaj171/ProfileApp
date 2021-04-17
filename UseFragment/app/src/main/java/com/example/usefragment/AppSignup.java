@@ -1,5 +1,6 @@
 package com.example.usefragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -58,6 +59,8 @@ public class AppSignup extends Fragment {
          progressBar = view.findViewById(R.id.appSignupProgressBar);
 
 
+
+
         Button button = view.findViewById(R.id.appSignupBtnConfirm);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,6 +111,7 @@ public class AppSignup extends Fragment {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()){
                                   User user = new User(name, number, email);
+                                  final NavController navController = Navigation.findNavController(view);
 
                                     FirebaseDatabase.getInstance().getReference("Users")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
@@ -117,6 +121,11 @@ public class AppSignup extends Fragment {
                                            if (task.isSuccessful()){
                                                Toast.makeText(getContext(), "User has been registered Succesfully!", Toast.LENGTH_LONG).show();
                                                progressBar.setVisibility(View.GONE);
+                                               editTextName.setText("");
+                                               editTextNumber.setText("");
+                                               editTextEmail.setText("");
+                                               editTextPassword.setText("");
+                                               navController.navigate(R.id.action_appSignup2_to_appLogin);
                                            }
                                            else {
                                                Toast.makeText(getContext(), "Failed to Signup! Try again", Toast.LENGTH_LONG).show();

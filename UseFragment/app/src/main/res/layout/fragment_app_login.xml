@@ -35,14 +35,15 @@
 
 
     <EditText
-        android:id="@+id/app_login_EditTextEmail"
+        android:id="@+id/apploginEditTextEmail"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="55dp"
         android:hint="@string/enteremail"
         android:inputType="textEmailAddress"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/apploginEditTextPassword"
@@ -50,7 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:hint="@string/enterpassword"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:autofillHints=""
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/apploginEditTextForgetPass"
